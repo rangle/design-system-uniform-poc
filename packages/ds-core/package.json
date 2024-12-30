@@ -1,0 +1,21 @@
+{
+  "name": "ds-core",
+  "version": "4.1.0",
+  "description": "",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.ts",
+    "./styles": "./index.css"
+  },
+  "scripts": {
+    "build": "radius-toolkit generate tokens.json -o styles/index.css",
+    "build:tailwind": "radius-toolkit generate tokens.json -t tailwind"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "registry": "localhost:4873",
+  "devDependencies": {
+    "radius-toolkit": "^0.6.2"
+  }
+}

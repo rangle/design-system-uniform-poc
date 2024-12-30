@@ -1,0 +1,372 @@
+
+@layer color-modes--light,color-modes--dark,brand--brand-1,brand--hot-brand,density--default,density--compact,breakpoints--mobile,breakpoints--desktop,defaultLayers;
+
+@layer defaultLayers {
+  /* Generated to allow the site to have defaults derived by Designer decisions */
+  :root {
+    --defaultLayers: light dark brand-1 hot-brand default compact mobile desktop;
+  }
+}
+
+
+
+@layer color-modes--light {
+  
+  /* light */
+  /* this layer requires a class to be added to a section or the body */
+  .light {
+    --color-modes: light;
+    --semantic-action-text-color-error: var(--brand-color-error-700);
+    --semantic-action-text-color-secondary: var(--brand-color-primary-500);
+    --semantic-action-text-color-default: var(--brand-interactive-neutral-white);
+    --semantic-action-background-color-default: var(--brand-color-primary-500);
+    --semantic-action-background-color-secondary: var(--brand-interactive-neutral-white);
+    --semantic-action-border-color-default: var(--brand-color-neutral-transparent);
+    --semantic-action-border-color-error: var(--brand-color-error-700);
+    --semantic-action-border-color-secondary: var(--brand-color-primary-500);
+    --semantic-static-text-color-strong: var(--brand-color-neutral-black);
+    --semantic-static-text-color-default: var(--brand-color-neutral-700);
+    --semantic-static-border-color-default: var(--brand-color-error-700);
+    --semantic-static-border-color-strong: var(--brand-color-neutral-300);
+    --semantic-static-background-color-default: var(--brand-color-neutral-white);
+    --semantic-static-background-color-muted: var(--brand-color-neutral-100);
+  }
+
+}
+
+@layer color-modes--dark {
+  
+  /* dark */
+  /* this layer requires a class to be added to a section or the body */
+  .dark {
+    --color-modes: dark;
+    --semantic-action-text-color-error: rgba(255, 77, 77, 1.00);
+    --semantic-action-text-color-secondary: var(--brand-color-neutral-100);
+    --semantic-action-text-color-default: var(--brand-color-neutral-white);
+    --semantic-action-background-color-default: var(--brand-color-neutral-800);
+    --semantic-action-background-color-secondary: var(--brand-color-neutral-800);
+    --semantic-action-border-color-default: var(--brand-color-primary-500);
+    --semantic-action-border-color-error: var(--brand-color-error-700);
+    --semantic-action-border-color-secondary: var(--brand-color-primary-500);
+    --semantic-static-text-color-strong: var(--brand-color-neutral-white);
+    --semantic-static-text-color-default: var(--brand-color-neutral-300);
+    --semantic-static-border-color-default: var(--brand-interactive-error-700);
+    --semantic-static-border-color-strong: var(--brand-color-neutral-700);
+    --semantic-static-background-color-default: var(--brand-color-neutral-800);
+    --semantic-static-background-color-muted: var(--brand-color-neutral-900);
+  }
+
+}
+
+@layer brand--brand-1 {
+  
+  /* brand-1 */
+  /* this layer requires a class to be added to a section or the body */
+  .brand-1 {
+    --brand: brand-1;
+    --brand-color-neutral-white: rgba(255, 255, 255, 1.00);
+    --brand-interactive-neutral-white: rgba(255, 255, 255, 1.00);
+    --brand-interactive-neutral-100: rgba(241, 241, 241, 1.00);
+    --brand-interactive-neutral-300: rgba(214, 214, 214, 1.00);
+    --brand-interactive-neutral-700: rgba(87, 87, 87, 1.00);
+    --brand-interactive-neutral-800: rgba(40, 40, 40, 1.00);
+    --brand-interactive-neutral-black: rgba(0, 0, 0, 1.00);
+    --brand-interactive-primary-500: rgba(26, 34, 242, 1.00);
+    --brand-interactive-error-700: rgba(216, 16, 16, 1.00);
+    --brand-color-primary-500: rgba(26, 34, 242, 1.00);
+    --brand-color-neutral-100: rgba(241, 241, 241, 1.00);
+    --brand-color-neutral-300: rgba(214, 214, 214, 1.00);
+    --brand-color-neutral-700: rgba(87, 87, 87, 1.00);
+    --brand-color-neutral-800: rgba(55, 55, 55, 1.00);
+    --brand-color-neutral-900: rgba(40, 40, 40, 1.00);
+    --brand-color-neutral-black: rgba(0, 0, 0, 1.00);
+    --brand-spacing-none: 0px;
+    --brand-spacing-20: 2px;
+    --brand-size-20: 2px;
+    --brand-size-40: 4px;
+    --brand-size-60: 6px;
+    --brand-size-80: 8px;
+    --brand-size-160: 16px;
+    --brand-size-200: 20px;
+    --brand-size-240: 24px;
+    --brand-size-360: 36px;
+    --brand-spacing-40: 4px;
+    --brand-spacing-60: 6px;
+    --brand-spacing-80: 8px;
+    --brand-spacing-160: 16px;
+    --brand-spacing-200: 20px;
+    --brand-spacing-240: 24px;
+    --brand-spacing-360: 36px;
+    --brand-font-family-sans: "Montserrat";
+    --brand-font-size-xxs: 10;
+    --brand-font-size-xs: 12;
+    --brand-font-size-sm: 14;
+    --brand-font-size-regular: 16;
+    --brand-font-size-lg: 20;
+    --brand-font-size-xl: 24;
+    --brand-font-size-xxl: 36;
+    --brand-font-weight-regular: 400;
+    --brand-font-weight-bold: 700;
+    --brand-line-height-3: 12;
+    --brand-line-height-4: 16;
+    --brand-line-height-5: 20;
+    --brand-line-height-6: 24;
+    --brand-letter-spacing-tightest: -1;
+    --brand-letter-spacing-tighter: -0.800000011920929;
+    --brand-letter-spacing-tight: -0.4000000059604645;
+    --brand-letter-spacing-regular: 0;
+    --brand-letter-spacing-wide: 0.4000000059604645;
+    --brand-letter-spacing-wider: 0.800000011920929;
+    --brand-letter-spacing-widest: 1;
+    --brand-color-error-700: rgba(216, 16, 16, 1.00);
+    --brand-border-width-05: 0.5px;
+    --brand-border-width-10: 1px;
+    --brand-border-width-20: 2px;
+    --brand-border-radius-none: 0px;
+    --brand-border-radius-xs: 4px;
+    --brand-border-radius-sm: 8px;
+    --brand-border-radius-md: 16px;
+    --brand-border-radius-lg: 32px;
+    --brand-color-neutral-transparent: rgba(170, 170, 170, 0.00);
+  }
+
+}
+
+@layer brand--hot-brand {
+  
+  /* hot-brand */
+  /* this layer requires a class to be added to a section or the body */
+  .hot-brand {
+    --brand: hot-brand;
+    --brand-color-neutral-white: rgba(255, 255, 255, 1.00);
+    --brand-interactive-neutral-white: rgba(255, 255, 255, 1.00);
+    --brand-interactive-neutral-100: rgba(241, 241, 241, 1.00);
+    --brand-interactive-neutral-300: rgba(214, 214, 214, 1.00);
+    --brand-interactive-neutral-700: rgba(87, 87, 87, 1.00);
+    --brand-interactive-neutral-800: rgba(40, 40, 40, 1.00);
+    --brand-interactive-neutral-black: rgba(0, 0, 0, 1.00);
+    --brand-interactive-primary-500: rgba(186, 158, 0, 1.00);
+    --brand-interactive-error-700: rgba(216, 93, 16, 1.00);
+    --brand-color-primary-500: rgba(203, 7, 0, 1.00);
+    --brand-color-neutral-100: rgba(216, 216, 216, 1.00);
+    --brand-color-neutral-300: rgba(157, 157, 157, 1.00);
+    --brand-color-neutral-700: rgba(64, 64, 64, 1.00);
+    --brand-color-neutral-800: rgba(43, 43, 43, 1.00);
+    --brand-color-neutral-900: rgba(27, 27, 27, 1.00);
+    --brand-color-neutral-black: rgba(0, 0, 0, 1.00);
+    --brand-spacing-none: 0px;
+    --brand-spacing-20: 3px;
+    --brand-size-20: 2px;
+    --brand-size-40: 4px;
+    --brand-size-60: 6px;
+    --brand-size-80: 8px;
+    --brand-size-160: 16px;
+    --brand-size-200: 20px;
+    --brand-size-240: 24px;
+    --brand-size-360: 36px;
+    --brand-spacing-40: 6px;
+    --brand-spacing-60: 8px;
+    --brand-spacing-80: 10px;
+    --brand-spacing-160: 20px;
+    --brand-spacing-200: 24px;
+    --brand-spacing-240: 28px;
+    --brand-spacing-360: 40px;
+    --brand-font-family-sans: "Helvetica";
+    --brand-font-size-xxs: 10;
+    --brand-font-size-xs: 14;
+    --brand-font-size-sm: 16;
+    --brand-font-size-regular: 18;
+    --brand-font-size-lg: 24;
+    --brand-font-size-xl: 28;
+    --brand-font-size-xxl: 40;
+    --brand-font-weight-regular: 300;
+    --brand-font-weight-bold: 900;
+    --brand-line-height-3: 14;
+    --brand-line-height-4: 18;
+    --brand-line-height-5: 22;
+    --brand-line-height-6: 28;
+    --brand-letter-spacing-tightest: -1;
+    --brand-letter-spacing-tighter: -0.800000011920929;
+    --brand-letter-spacing-tight: -0.4000000059604645;
+    --brand-letter-spacing-regular: 0;
+    --brand-letter-spacing-wide: 0.4000000059604645;
+    --brand-letter-spacing-wider: 0.800000011920929;
+    --brand-letter-spacing-widest: 1;
+    --brand-color-error-700: rgba(139, 0, 0, 1.00);
+    --brand-border-width-05: 0.5px;
+    --brand-border-width-10: 1px;
+    --brand-border-width-20: 2px;
+    --brand-border-radius-none: 0px;
+    --brand-border-radius-xs: 2px;
+    --brand-border-radius-sm: 4px;
+    --brand-border-radius-md: 8px;
+    --brand-border-radius-lg: 16px;
+    --brand-color-neutral-transparent: rgba(170, 170, 170, 0.00);
+  }
+
+}
+
+@layer density--default {
+  
+  /* default */
+  /* this layer requires a class to be added to a section or the body */
+  .default {
+    --density: default;
+    --density-action-gap-xs: var(--brand-spacing-20);
+    --density-action-gap-sm: var(--brand-spacing-40);
+    --density-action-gap-md: var(--brand-spacing-80);
+    --density-action-gap-lg: var(--brand-spacing-160);
+    --density-action-gap-xl: var(--brand-spacing-240);
+    --density-icon-size-none: var(--brand-spacing-none);
+    --density-padding-xs: var(--brand-spacing-20);
+    --density-padding-sm: var(--brand-spacing-40);
+    --density-padding-md: var(--brand-spacing-80);
+    --density-padding-lg: var(--brand-spacing-160);
+    --density-padding-xl: var(--brand-spacing-240);
+    --density-icon-size-sm: var(--brand-spacing-40);
+    --density-icon-size-md: var(--brand-spacing-80);
+    --density-icon-size-lg: var(--brand-spacing-160);
+    --density-icon-size-xl: var(--brand-spacing-240);
+    --density-action-border-radius-none: var(--brand-border-radius-none);
+    --density-action-border-radius-sm: var(--brand-border-radius-sm);
+    --density-action-border-radius-default: var(--brand-border-radius-md);
+    --density-static-border-radius-none: var(--brand-border-radius-none);
+    --density-static-border-radius-sm: var(--brand-border-radius-sm);
+    --density-static-border-radius-md: var(--brand-border-radius-md);
+    --density-static-border-radius-lg: var(--brand-border-radius-lg);
+    --density-action-border-width-thin: var(--brand-border-width-05);
+    --density-action-border-width-default: var(--brand-border-width-10);
+    --density-action-border-width-thick: var(--brand-border-width-20);
+  }
+
+}
+
+@layer density--compact {
+  
+  /* compact */
+  /* this layer requires a class to be added to a section or the body */
+  .compact {
+    --density: compact;
+    --density-action-gap-xs: 0;
+    --density-action-gap-sm: 0;
+    --density-action-gap-md: 0;
+    --density-action-gap-lg: 0;
+    --density-action-gap-xl: 0;
+    --density-icon-size-none: 0px;
+    --density-padding-xs: 0px;
+    --density-padding-sm: 0px;
+    --density-padding-md: 0px;
+    --density-padding-lg: 0px;
+    --density-padding-xl: 0px;
+    --density-icon-size-sm: 0px;
+    --density-icon-size-md: 0px;
+    --density-icon-size-lg: 0px;
+    --density-icon-size-xl: 0px;
+    --density-action-border-radius-none: 0px;
+    --density-action-border-radius-sm: 0px;
+    --density-action-border-radius-default: 0px;
+    --density-static-border-radius-none: 0px;
+    --density-static-border-radius-sm: 0px;
+    --density-static-border-radius-md: 0px;
+    --density-static-border-radius-lg: 0px;
+    --density-action-border-width-thin: 0px;
+    --density-action-border-width-default: 0px;
+    --density-action-border-width-thick: 0px;
+  }
+
+}
+
+@layer breakpoints--mobile {
+  
+  /* mobile */
+  /* this layer requires a class to be added to a section or the body */
+  .mobile {
+    --breakpoints: mobile;
+    --typography-label-font-size-default: var(--brand-font-size-sm);
+    --typography-label-font-weight-default: var(--brand-font-weight-bold);
+    --typography-label-line-height-default: var(--brand-line-height-4);
+    --typography-label-letter-spacing-default: var(--brand-letter-spacing-regular);
+    --typography-info-font-size-default: var(--brand-font-size-regular);
+    --typography-info-font-weight-default: var(--brand-font-weight-bold);
+    --typography-info-line-height-default: var(--brand-line-height-4);
+    --typography-info-letter-spacing-default: var(--brand-letter-spacing-regular);
+    --breakpoint-action-padding-none: var(--brand-spacing-none);
+    --breakpoint-action-padding-xxs: var(--density-padding-xs);
+    --breakpoint-action-padding-xs: var(--density-padding-sm);
+    --breakpoint-action-padding-sm: var(--density-padding-md);
+    --breakpoint-action-padding-default: var(--density-padding-lg);
+    --breakpoint-static-padding-default: var(--density-padding-md);
+    --breakpoint-static-padding-sm: var(--density-padding-sm);
+    --breakpoint-action-gap-none: var(--brand-spacing-none);
+    --breakpoint-action-gap-xxs: var(--brand-spacing-20);
+    --breakpoint-action-gap-xs: var(--brand-spacing-40);
+    --breakpoint-action-gap-sm: var(--brand-spacing-60);
+    --breakpoint-action-gap-default: var(--brand-spacing-80);
+    --breakpoint-static-padding-md: var(--density-padding-md);
+    --breakpoint-action-border-radius-sm: var(--density-action-border-radius-sm);
+    --breakpoint-static-border-radius-sm: var(--density-static-border-radius-sm);
+    --breakpoint-static-border-radius-md: var(--density-static-border-radius-md);
+    --typography-body-font-size-1: var(--brand-font-size-regular);
+    --typography-body-font-size-2: var(--brand-font-size-sm);
+    --typography-body-font-weight-1: var(--brand-font-weight-bold);
+    --typography-body-font-weight-2: var(--brand-font-weight-regular);
+    --typography-body-line-height-1: var(--brand-line-height-4);
+    --typography-body-line-height-2: var(--brand-line-height-4);
+    --typography-body-letter-spacing-default: var(--brand-letter-spacing-regular);
+    --typography-title-font-size-lg: var(--brand-font-size-lg);
+    --typography-title-font-size-md: var(--brand-font-size-regular);
+    --typography-title-font-weight-default: var(--brand-font-weight-bold);
+    --typography-title-line-height-lg: var(--brand-line-height-5);
+    --typography-title-line-height-md: var(--brand-line-height-4);
+    --typography-title-letter-spacing-default: var(--brand-letter-spacing-regular);
+  }
+
+}
+
+@layer breakpoints--desktop {
+  
+  /* desktop */
+  /* this layer requires a class to be added to a section or the body */
+  .desktop {
+    --breakpoints: desktop;
+    --typography-label-font-size-default: var(--brand-font-size-regular);
+    --typography-label-font-weight-default: var(--brand-font-weight-bold);
+    --typography-label-line-height-default: var(--brand-line-height-4);
+    --typography-label-letter-spacing-default: var(--brand-letter-spacing-regular);
+    --typography-info-font-size-default: var(--brand-font-size-lg);
+    --typography-info-font-weight-default: var(--brand-font-weight-bold);
+    --typography-info-line-height-default: var(--brand-line-height-4);
+    --typography-info-letter-spacing-default: var(--brand-letter-spacing-regular);
+    --breakpoint-action-padding-none: var(--brand-spacing-none);
+    --breakpoint-action-padding-xxs: var(--density-padding-sm);
+    --breakpoint-action-padding-xs: var(--density-padding-md);
+    --breakpoint-action-padding-sm: var(--density-padding-lg);
+    --breakpoint-action-padding-default: var(--density-padding-xl);
+    --breakpoint-static-padding-default: var(--density-padding-xl);
+    --breakpoint-static-padding-sm: var(--density-padding-md);
+    --breakpoint-action-gap-none: var(--brand-spacing-none);
+    --breakpoint-action-gap-xxs: var(--brand-spacing-20);
+    --breakpoint-action-gap-xs: var(--brand-spacing-60);
+    --breakpoint-action-gap-sm: var(--brand-spacing-80);
+    --breakpoint-action-gap-default: var(--brand-spacing-160);
+    --breakpoint-static-padding-md: var(--density-padding-lg);
+    --breakpoint-action-border-radius-sm: var(--density-action-border-radius-default);
+    --breakpoint-static-border-radius-sm: var(--brand-border-radius-md);
+    --breakpoint-static-border-radius-md: var(--density-static-border-radius-lg);
+    --typography-body-font-size-1: var(--brand-font-size-lg);
+    --typography-body-font-size-2: var(--brand-font-size-regular);
+    --typography-body-font-weight-1: var(--brand-font-weight-bold);
+    --typography-body-font-weight-2: var(--brand-font-weight-regular);
+    --typography-body-line-height-1: var(--brand-line-height-4);
+    --typography-body-line-height-2: var(--brand-line-height-4);
+    --typography-body-letter-spacing-default: var(--brand-letter-spacing-regular);
+    --typography-title-font-size-lg: var(--brand-font-size-xl);
+    --typography-title-font-size-md: var(--brand-font-size-lg);
+    --typography-title-font-weight-default: var(--brand-font-weight-bold);
+    --typography-title-line-height-lg: var(--brand-line-height-6);
+    --typography-title-line-height-md: var(--brand-line-height-5);
+    --typography-title-letter-spacing-default: var(--brand-letter-spacing-regular);
+  }
+
+}
+  

@@ -1,0 +1,36 @@
+@import 'ds-core/styles';
+
+.ds-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--semantic-static-border-color-strong);
+  padding: var(--breakpoint-static-padding-default);
+  font-family: var(--brand-font-family-sans), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--semantic-static-background-color-default);
+}
+
+.ds-header svg {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ds-header h1 {
+  display: inline-block;
+  vertical-align: top;
+  margin: var(--brand-spacing-60) 0 var(--brand-spacing-60) var(--brand-spacing-80);
+  font-weight: var(--typography-title-font-weight-default);
+  font-size: var(--typography-title-font-size-lg);
+  color: var(--semantic-static-text-color-strong);
+  line-height: 1;
+}
+
+.ds-header button+button {
+  margin-left: var(--breakpoint-action-gap-xs);
+}
+
+.ds-header .welcome {
+  margin-right: var(--breakpoint-action-gap-xs);
+  color: var(--semantic-static-text-color-strong);
+  font-size: var(--typography-body-font-size-2);
+}

@@ -1,0 +1,43 @@
+@import 'ds-core/styles';
+
+.ds-button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: var(--density-action-border-radius-default);
+  font-weight: var(--brand-font-weight-bold);
+  font-family: var(--brand-font-family-sans), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.ds-button--primary {
+  background-color: var(--semantic-action-background-color-default);
+  color: var(--semantic-action-text-color-default);
+  border: 1px solid var(--semantic-action-border-color-default);
+}
+
+.ds-button--secondary {
+  background-color: var(--semantic-action-background-color-secondary);
+  color: var(--semantic-action-text-color-secondary);
+  border: 1px solid var(--semantic-action-border-color-secondary);
+}
+
+.ds-button--error {
+  background-color: var(--semantic-action-background-color-error);
+  color: var(--semantic-action-text-color-error);
+  border: 1px solid var(--semantic-action-border-color-error);
+}
+
+.ds-button--small {
+  padding: var(--breakpoint-action-padding-default);
+  font-size: var(--brand-font-size-xs);
+}
+
+.ds-button--medium {
+  padding: var(--breakpoint-action-padding-default);
+  font-size: var(--brand-font-size-sm);
+}
+
+.ds-button--large {
+  padding: var(--breakpoint-action-padding-default);
+  font-size: var(--typography-button-label-size-lg);
+}

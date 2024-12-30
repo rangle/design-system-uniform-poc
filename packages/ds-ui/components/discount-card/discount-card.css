@@ -1,0 +1,153 @@
+@import "ds-core/styles";
+
+.ds-discount-card,
+.ds-discount-card * {
+  box-sizing: border-box;
+}
+
+.ds-discount-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.15));
+  width: fit-content;
+}
+
+.ds-discount-card__content {
+  background-color: var(--semantic-static-background-color-default);
+  border-radius: var(--density-static-border-radius-md);
+  padding: var(--breakpoint-static-padding-default);
+  display: flex;
+  flex-direction: column;
+  gap: var(--breakpoint-action-gap-xxs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 363px;
+  z-index: 2;
+}
+
+.ds-discount-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--density-padding-lg);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.ds-discount-card__discount {
+  display: flex;
+  flex-direction: column;
+  gap: var(--breakpoint-action-gap-default);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.ds-discount-card__amount {
+  color: var(--semantic-static-text-color-strong);
+  text-align: left;
+  font-family: var(--brand-font-family-sans), "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: var(--typography-title-font-size-lg);
+  line-height: var(--typography-title-line-height-lg) px;
+  font-weight: var(--brand-font-weight-bold);
+  position: relative;
+}
+
+.ds-discount-card__subtitle {
+  color: var(--semantic-static-text-color-default);
+  text-align: left;
+  font-family: var(--brand-font-family-sans), "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: var(--typography-body-font-size-2);
+  line-height: var(--typography-body-line-height-2) px;
+  font-weight: var(--brand-font-weight-bold);
+  position: relative;
+}
+
+.ds-discount-card__divider {
+  margin-top: -1px;
+  border: none;
+  border-top: 1px dashed var(--semantic-static-border-color-strong);
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0;
+  position: relative;
+}
+
+.ds-discount-card__footer {
+  display: flex;
+  flex-direction: row;
+  gap: var(--breakpoint-action-gap-default);
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.ds-discount-card__date {
+  display: flex;
+  flex-direction: row;
+  gap: var(--breakpoint-action-gap-xxs);
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.ds-discount-card__date svg {
+  flex-shrink: 0;
+  width: var(--density-icon-size-md) px;
+  height: var(--density-icon-size-md) px;
+}
+
+.ds-discount-card__expiration {
+  color: var(--semantic-static-text-color-default);
+  text-align: left;
+  font-family: var(--brand-font-family-sans), "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: var(--typography-label-font-size-default);
+  line-height: var(--typography-label-line-height-default) px;
+  font-weight: var(--typography-label-font-weight-default);
+  position: relative;
+}
+
+.ds-discount-card__info {
+  margin-top: -12px;
+  background-color: var(--semantic-static-background-color-muted);
+  border-radius: 0 0 var(--density-static-border-radius-md) var(--density-static-border-radius-md);
+  padding: var(--breakpoint-static-padding-default) var(--breakpoint-action-padding-xxs) var(--breakpoint-action-padding-sm) var(--breakpoint-static-padding-default);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 363px;
+  min-height: 60px;
+  box-sizing: border-box;
+  z-index: 1;
+  color: var(--semantic-static-text-color-default);
+  font-family: var(--brand-font-family-sans), "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: var(--typography-body-font-size-2);
+  line-height: var(--typography-body-line-height-2) px;
+  font-weight: var(--typography-body-font-weight-2);
+}
+
+.ds-discount-card__info>div {
+  flex: 1;
+}
