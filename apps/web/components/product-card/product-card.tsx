@@ -3,7 +3,7 @@ import {
   UniformRichText,
   UniformText,
 } from "@uniformdev/canvas-next-rsc/component";
-import { ResolveComponentResultWithType } from "../uniform/models";
+import { ResolveComponentResultWithType } from "../../uniform/models";
 import { ProductCard } from "ds-ui/product-card";
 import { CheckCircleIcon } from "ds-ui/icons";
 
@@ -21,7 +21,7 @@ export const ProductCardComponent = ({
         "Feature 2",
         "Feature 3",
     ].map((feature) => ({
-        icon: <CheckCircleIcon />,
+        icon: <CheckCircleIcon/>,
         description: feature,
       }));
     

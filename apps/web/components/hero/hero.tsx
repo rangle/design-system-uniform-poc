@@ -5,10 +5,12 @@ import {
   } from "@uniformdev/canvas-next-rsc/component";
   import { ResolveComponentResultWithType } from "../../uniform/models";
   import "./hero.css";
+  import { Button } from "ds-ui/button";
   
   export const HeroComponent = ({
     component,
     context,
+    actionLabel,
   }: ComponentProps<HeroProps>) => {
     return (
       <>
@@ -27,9 +29,10 @@ import {
             parameterId="description"
             className="subtitle"
           />
-          <button className="button">
-            Check Availability
-          </button>
+          <Button
+            label={actionLabel}
+            variant="secondary"
+          />
         </div>
       </div>
     </header>
@@ -40,6 +43,7 @@ import {
   export type HeroProps = {
     title: string;
     description: string;
+    actionLabel: string;
   };
   
   export const heroMapping: ResolveComponentResultWithType = {

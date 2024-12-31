@@ -2,7 +2,8 @@ import {
   ComponentProps,
   UniformSlot,
 } from "@uniformdev/canvas-next-rsc/component";
-import { ResolveComponentResultWithType } from "../uniform/models";
+import { ResolveComponentResultWithType } from "../../uniform/models";
+import './page.css';
 
 export const PageComponent = ({
   component,
@@ -13,7 +14,14 @@ export const PageComponent = ({
   return (
     <>
       <UniformSlot context={context} data={component} slot={slots.header} />
-      <UniformSlot context={context} data={component} slot={slots.content} />
+      <section className="section-bg">
+      <div className="container">
+        <h2 className="section-title">Choose Your Perfect Plan</h2>
+        <div className="grid-container">
+          <UniformSlot context={context} data={component} slot={slots.content} />
+        </div>
+      </div>
+    </section>
       <UniformSlot context={context} data={component} slot={slots.footer} />
     </>
   );

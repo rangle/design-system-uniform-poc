@@ -6,7 +6,6 @@
     ".": "./index.ts",
     "./button": "./components/button/button.tsx",
     "./header": "./components/header/header.tsx",
-    "./discount-card": "./components/discount-card/discount-card.tsx",
     "./product-card": "./components/product-card/product-card.tsx",
     "./icons": "./components/icons/index.ts"
   },

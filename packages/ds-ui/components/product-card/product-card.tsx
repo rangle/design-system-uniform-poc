@@ -58,7 +58,7 @@ export const ProductCard = ({
       </div>
       <div className="ds-product-card__footer">
         <Button 
-          variant="secondary" 
+          variant="primary" 
           label={buttonLabel}
           onClick={onBuy}
         />
