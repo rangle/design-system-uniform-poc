@@ -6,7 +6,7 @@ import {
   } from "@uniformdev/canvas-next-rsc";
   import { resolveComponent } from "../../uniform/resolver";
   
-  export default async function HomePage(props: PageParameters) {
+  export default async function HomePage(props: PageParameters): Promise<JSX.Element> {
     const route = await retrieveRoute(props);
     const serverContext = await createServerUniformContext({
       searchParams: props.searchParams,
