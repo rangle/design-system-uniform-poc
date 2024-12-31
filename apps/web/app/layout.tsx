@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import "ds-core/styles";
+import { UniformContext } from '@uniformdev/canvas-next-rsc';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${theme}`}>
-        {children}
+        <UniformContext>
+          {children}
+        </UniformContext>
       </body>
     </html>
   );

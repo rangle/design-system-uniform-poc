@@ -1,0 +1,54 @@
+.header-bg {
+    background: linear-gradient(to right, #2563eb, #1e40af);
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+.content {
+    max-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 3.75rem;
+    }
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #bfdbfe;
+}
+
+@media (min-width: 768px) {
+    .subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+.button {
+    background-color: white;
+    color: #2563eb;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    font-size: 1.125rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #f0f4ff;
+}
