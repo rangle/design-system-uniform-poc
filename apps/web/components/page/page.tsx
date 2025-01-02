@@ -9,7 +9,6 @@ export const PageComponent = ({
   component,
   context,
   slots,
-  title,
 }: ComponentProps<PageProps, PageSlots>) => {
   return (
     <>

@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "dotenv -e ../../.env next dev",
-    "build": "dotenv -e ../../.env next build",
-    "start": "dotenv -e ../../.env next start",
+    "dev": "dotenv -e .env next dev",
+    "build": "dotenv -e .env next build",
+    "start": "dotenv -e .env next start",
     "lint": "next lint --max-warnings 0",
     "check-types": "tsc --noEmit"
   },
