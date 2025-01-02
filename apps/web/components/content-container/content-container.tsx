@@ -25,6 +25,15 @@ export const ContentContainerComponent = ({
             />
           </div>
         )}
+        {layout === "list" && (
+          <div className="list-container">
+            <UniformSlot
+              context={context}
+              data={component}
+              slot={slots.item}
+            />
+          </div>
+        )}
       </div>
     </section>
   );
