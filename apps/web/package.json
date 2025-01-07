@@ -12,8 +12,8 @@
     "uniform:manifest": "uniform context manifest download --output ./uniform/context-manifest.json"
   },
   "dependencies": {
-    "@uniformdev/canvas-next-rsc": "19.132.0",
-    "@uniformdev/context": "^19.211.0",
+    "@uniformdev/canvas-next-rsc": "19.212.0",
+    "@uniformdev/context": "19.212.0",
     "ds-core": "workspace:*",
     "ds-ui": "workspace:*",
     "next": "14.2.4",
@@ -26,7 +26,7 @@
     "@types/node": "20.14.8",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
-    "@uniformdev/cli": "^19.211.0",
+    "@uniformdev/cli": "19.212.0",
     "dotenv": "^16.4.7",
     "dotenv-cli": "^8.0.0",
     "typescript": "5.3.3"
