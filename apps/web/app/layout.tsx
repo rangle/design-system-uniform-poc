@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "ds-core/styles";
 import { UniformContext } from '@uniformdev/canvas-next-rsc';
+import { UniformClientContext } from "../uniform/clientContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={theme}>
-        <UniformContext>
+        <UniformContext clientContextComponent={UniformClientContext}>
           {children}
         </UniformContext>
       </body>
