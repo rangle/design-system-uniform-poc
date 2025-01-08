@@ -14,10 +14,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const theme = "brand-1 light desktop default";
   return (
     <html lang="en">
-      <body className={theme}>
+      <body>
         <UniformContext clientContextComponent={UniformClientContext}>
           {children}
         </UniformContext>
