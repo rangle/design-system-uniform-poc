@@ -21,6 +21,7 @@ type ProductCardProps = {
   footerText?: string;
   /** Optional badge text */
   badgeText?: string;
+  imgUrl?: string;
 }
 
 /** Card component to display product information */
@@ -32,10 +33,12 @@ export const ProductCard = ({
   buttonLabel = 'Buy Now',
   footerText,
   badgeText,
+  imgUrl,
 }: ProductCardProps) => {
   return (
     <div className="ds-product-card">
       <div className="ds-product-card__header">
+        {imgUrl && <img src={imgUrl} />}
         <div className="ds-product-card__title-frame">
           <div className="ds-product-card__title">{title}</div>
           {badgeText && (
