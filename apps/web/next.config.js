@@ -1,7 +1,7 @@
-import { withUniformConfig } from "@uniformdev/canvas-next-rsc/config";
-
- /** @type {import('next').NextConfig} */
- const nextConfig = {};
-
- export default withUniformConfig(nextConfig);
+/** @type {import('@uniformdev/canvas-next-rsc/config').UniformServerConfig} */
+const config = {
+    defaultConsent: true,
+  };
+  
+  export default config;
 
