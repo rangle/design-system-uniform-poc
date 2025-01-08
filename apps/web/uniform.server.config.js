@@ -1,5 +1,6 @@
 /** @type {import('@uniformdev/canvas-next-rsc/config').UniformServerConfig} */
-module.exports = {
-    defaultConsent: true,
-  };
-  
+const config = {
+  defaultConsent: true,
+};
+
+export default config;
