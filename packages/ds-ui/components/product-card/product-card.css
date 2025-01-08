@@ -86,6 +86,7 @@
   gap: var(--breakpoint-action-gap-xs);
   padding-top: var(--breakpoint-static-padding-default);
   border-top: 1px solid var(--semantic-static-border-color-strong);
+  color: var(--semantic-action-text-color-default);
 }
 
 .ds-product-card__footer-text {
