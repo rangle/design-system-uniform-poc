@@ -15,6 +15,7 @@ export const ProductCardComponent = ({
   terms,
   url,
   features,
+  imgurl,
 }: ComponentProps<ProductCardProps>) => {
   const featureItems = Array.isArray(features) ? features.map((feature) => ({
     icon: <CheckCircleIcon />,
@@ -23,6 +24,8 @@ export const ProductCardComponent = ({
     icon: <CheckCircleIcon />,
     description: feature,
   }));
+
+  const imgSrc = Array.isArray(imgurl) ? imgurl[0]?.fields?.url?.value : '';
 
   return (
     <>
@@ -35,6 +38,7 @@ export const ProductCardComponent = ({
             buttonLabel={actionLabel}
             footerText={terms}
             badgeText="Popular"
+            imgUrl={imgSrc}
           />
         </Link>
       ) : (
@@ -45,6 +49,7 @@ export const ProductCardComponent = ({
           buttonLabel={actionLabel}
           footerText={terms}
           badgeText="Popular"
+          imgUrl={imgSrc}
         />
       )}
     </>
@@ -70,7 +75,8 @@ export type ProductCardProps = {
   actionLabel: string;
   terms: string;
   url: string;
-  features: FeatureItem[]
+  features: FeatureItem[];
+  imgurl: any[];
 };
 
 export const productCardMapping: ResolveComponentResultWithType = {
