@@ -4,9 +4,8 @@ import {
   UniformText,
 } from "@uniformdev/canvas-next-rsc/component";
 import { ResolveComponentResultWithType } from "../../uniform/models";
-import { ProductCard } from "ds-ui/product-card";
-import { CheckCircleIcon } from "ds-ui/icons";
 import Link from "next/link";
+import { Product } from "./product";
 
 export const ProductCardComponent = ({
   title,
@@ -17,39 +16,27 @@ export const ProductCardComponent = ({
   features,
   imgurl,
 }: ComponentProps<ProductCardProps>) => {
-  const featureItems = Array.isArray(features) ? features.map((feature) => ({
-    icon: <CheckCircleIcon />,
-    description: feature.fields.text.value,
-  })) : ["Feature 1", "Feature 2", "Feature 3"].map((feature) => ({
-    icon: <CheckCircleIcon />,
-    description: feature,
-  }));
-
-  const imgSrc = Array.isArray(imgurl) ? imgurl[0]?.fields?.url?.value : '';
-
   return (
     <>
       {url ? (
         <Link href={url}>
-          <ProductCard
+          <Product
             title={title}
-            pricePerMonth={price}
-            features={featureItems}
-            buttonLabel={actionLabel}
-            footerText={terms}
-            badgeText="Popular"
-            imgUrl={imgSrc}
+            price={price}
+            features={features}
+            actionLabel={actionLabel}
+            terms={terms}
+            imgurl={imgurl}
           />
         </Link>
       ) : (
-        <ProductCard
+        <Product
           title={title}
-          pricePerMonth={price}
-          features={featureItems}
-          buttonLabel={actionLabel}
-          footerText={terms}
-          badgeText="Popular"
-          imgUrl={imgSrc}
+          price={price}
+          features={features}
+          actionLabel={actionLabel}
+          terms={terms}
+          imgurl={imgurl}
         />
       )}
     </>
@@ -66,8 +53,8 @@ type FeatureItem = {
   fields: {
     icon: Block;
     text: Block;
-  }
-}
+  };
+};
 
 export type ProductCardProps = {
   title: string;

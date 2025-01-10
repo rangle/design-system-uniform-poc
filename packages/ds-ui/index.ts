@@ -1,3 +1,5 @@
+"use client";
+
 // utils
 export { setupCounter } from "./utils/counter";
 
