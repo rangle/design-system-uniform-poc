@@ -10,7 +10,14 @@ export interface CartItem extends Product {
   quantity: number;
 }
 
-const cart: CartItem[] = [];
+const cart: CartItem[] = [
+  {
+    id: 1,
+    name: "mock product",
+    price: 0,
+    quantity: 1,
+  },
+];
 
 export async function GET() {
   return NextResponse.json({ items: cart, total: calculateTotal() });
