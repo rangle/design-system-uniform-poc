@@ -1,3 +1,5 @@
+'use client';
+
 import './product-card.css';
 import { Button } from '../button';
 
@@ -13,8 +15,6 @@ type ProductCardProps = {
     /** The feature description */
     description: string;
   }>;
-  /** Optional click handler for the buy button */
-  onBuy?: () => void;
   /** Optional button label */
   buttonLabel?: string;
   /** Optional footer text */
@@ -22,6 +22,7 @@ type ProductCardProps = {
   /** Optional badge text */
   badgeText?: string;
   imgUrl?: string;
+  onBuy?: () => void;
 }
 
 /** Card component to display product information */
@@ -29,11 +30,11 @@ export const ProductCard = ({
   title,
   pricePerMonth,
   features,
-  onBuy,
   buttonLabel = 'Buy Now',
   footerText,
   badgeText,
   imgUrl,
+  onBuy,
 }: ProductCardProps) => {
   return (
     <div className="ds-product-card">
